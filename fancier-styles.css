@@ -1,0 +1,56 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-image: linear-gradient(transparent, var(--pico-background-color) 75%), url("./assets/man.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+:root header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: var(--pico-card-background-color);
+  border-radius: 0 0 var(--pico-border-radius) var(--pico-border-radius);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.logo img {
+  display: inline;
+  height: calc(1rem * 1.5);
+}
+
+.hero-box {
+  display: grid;
+  align-items: center;
+  min-height: 70vh;
+  text-align: center;
+}
+
+img {
+  display: block;
+  height: 400px;
+}
+
+figure {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
